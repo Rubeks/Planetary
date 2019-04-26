@@ -13,6 +13,10 @@
 		B9436D6222731236000CC80E /* Planetary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9436D6022731236000CC80E /* Planetary.xcdatamodeld */; };
 		B9436D6422731239000CC80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9436D6322731239000CC80E /* Assets.xcassets */; };
 		B9436D6722731239000CC80E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9436D6522731239000CC80E /* LaunchScreen.storyboard */; };
+		B9436D6F227313A9000CC80E /* Extension CAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9436D6E227313A9000CC80E /* Extension CAGradientLayer.swift */; };
+		B9436D7322731C6F000CC80E /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9436D7222731C6F000CC80E /* MenuCollectionViewCell.swift */; };
+		B9C189212273314100BC48EC /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C189202273314100BC48EC /* MenuModel.swift */; };
+		B9C18924227331AE00BC48EC /* MenuModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C18923227331AE00BC48EC /* MenuModelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B9436D6322731239000CC80E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9436D6622731239000CC80E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9436D6822731239000CC80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9436D6E227313A9000CC80E /* Extension CAGradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension CAGradientLayer.swift"; sourceTree = "<group>"; };
+		B9436D7222731C6F000CC80E /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		B9C189202273314100BC48EC /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		B9C18923227331AE00BC48EC /* MenuModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,77 @@
 		B9436D5822731236000CC80E /* Planetary */ = {
 			isa = PBXGroup;
 			children = (
+				B9C1891D227330F500BC48EC /* View */,
+				B9C1891B227330D500BC48EC /* Classes */,
+				B9C189222273316C00BC48EC /* Model */,
+				B9C1892522733AEE00BC48EC /* ModelView */,
+				B9C1891C227330E000BC48EC /* Controllers */,
+				B9C1891E2273310300BC48EC /* Extensions */,
+				B9C1891F2273310B00BC48EC /* SupportingFiles */,
+			);
+			path = Planetary;
+			sourceTree = "<group>";
+		};
+		B9C1891B227330D500BC48EC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
 				B9436D5922731236000CC80E /* AppDelegate.swift */,
+				B9436D7222731C6F000CC80E /* MenuCollectionViewCell.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B9C1891C227330E000BC48EC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				B9436D5B22731236000CC80E /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B9C1891D227330F500BC48EC /* View */ = {
+			isa = PBXGroup;
+			children = (
 				B9436D5D22731236000CC80E /* Main.storyboard */,
-				B9436D6322731239000CC80E /* Assets.xcassets */,
 				B9436D6522731239000CC80E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C1891E2273310300BC48EC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B9436D6E227313A9000CC80E /* Extension CAGradientLayer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B9C1891F2273310B00BC48EC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B9436D6322731239000CC80E /* Assets.xcassets */,
 				B9436D6822731239000CC80E /* Info.plist */,
 				B9436D6022731236000CC80E /* Planetary.xcdatamodeld */,
 			);
-			path = Planetary;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B9C189222273316C00BC48EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9C189202273314100BC48EC /* MenuModel.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B9C1892522733AEE00BC48EC /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				B9C18923227331AE00BC48EC /* MenuModelView.swift */,
+			);
+			name = ModelView;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +210,11 @@
 			files = (
 				B9436D6222731236000CC80E /* Planetary.xcdatamodeld in Sources */,
 				B9436D5C22731236000CC80E /* ViewController.swift in Sources */,
+				B9C189212273314100BC48EC /* MenuModel.swift in Sources */,
+				B9436D6F227313A9000CC80E /* Extension CAGradientLayer.swift in Sources */,
+				B9C18924227331AE00BC48EC /* MenuModelView.swift in Sources */,
 				B9436D5A22731236000CC80E /* AppDelegate.swift in Sources */,
+				B9436D7322731C6F000CC80E /* MenuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E38495SVJK;
-				INFOPLIST_FILE = Planetary/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Planetary/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E38495SVJK;
-				INFOPLIST_FILE = Planetary/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Planetary/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

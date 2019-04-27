@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     var menuModelView: MenuModelView?
     
+    var menuModel: MenuModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,7 +45,17 @@ class ViewController: UIViewController {
         myView.setGradientBackgroundCenterToTopOrBottom(colorOne: centerColor, colorTwo: downColor, direction: .centerToBot)
     }
     
+    //15. Передача состояния на MenuToDetailVC
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "menuToDetail" {
+            if let vc = segue.destination as? MenuToDetailViewController {
+                vc.menuModel = menuModel
+            }
+        }
+    }
 }
+
+
 
 
 //MARK: - Collection VieW
@@ -57,7 +69,6 @@ extension ViewController : UICollectionViewDataSource {
             return 1
         }
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -75,11 +86,21 @@ extension ViewController : UICollectionViewDataSource {
         
         return UICollectionViewCell()
     }
-    
-    
 }
 
 //MARK: Delegate
 extension ViewController : UICollectionViewDelegate {
     
+    //11. Подготовка перехода
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        //12. Нажатая ячейка
+        let menuToDetail = menuModelView?.menuObjects[indexPath.row]
+        
+        //13. Передача из modelView выбранного элемента в экземпляр структуры
+        menuModel = menuToDetail
+        
+        //14. Переход
+        performSegue(withIdentifier: "menuToDetail", sender: menuToDetail)
+    }
 }

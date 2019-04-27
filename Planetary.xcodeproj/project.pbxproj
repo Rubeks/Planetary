@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B92AB98C22743876001608AF /* MenuToDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92AB98B22743876001608AF /* MenuToDetailViewController.swift */; };
 		B9436D5A22731236000CC80E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9436D5922731236000CC80E /* AppDelegate.swift */; };
 		B9436D5C22731236000CC80E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9436D5B22731236000CC80E /* ViewController.swift */; };
 		B9436D5F22731236000CC80E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9436D5D22731236000CC80E /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B92AB98B22743876001608AF /* MenuToDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuToDetailViewController.swift; sourceTree = "<group>"; };
 		B9436D5622731236000CC80E /* Planetary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planetary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9436D5922731236000CC80E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9436D5B22731236000CC80E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				B9436D5B22731236000CC80E /* ViewController.swift */,
+				B92AB98B22743876001608AF /* MenuToDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				B9436D6222731236000CC80E /* Planetary.xcdatamodeld in Sources */,
 				B9436D5C22731236000CC80E /* ViewController.swift in Sources */,
+				B92AB98C22743876001608AF /* MenuToDetailViewController.swift in Sources */,
 				B9C189212273314100BC48EC /* MenuModel.swift in Sources */,
 				B9436D6F227313A9000CC80E /* Extension CAGradientLayer.swift in Sources */,
 				B9C18924227331AE00BC48EC /* MenuModelView.swift in Sources */,

@@ -104,11 +104,132 @@
                     </navigationItem>
                     <connections>
                         <outlet property="myView" destination="FrN-uK-ZlJ" id="yWj-CG-NA8"/>
+                        <segue destination="nXG-nd-hRu" kind="presentation" identifier="menuToDetail" id="wam-Qh-9Vj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Tf-bP-FZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="919" y="19"/>
+        </scene>
+        <!--Menu To Detail View Controller-->
+        <scene sceneID="c6V-zJ-F22">
+            <objects>
+                <viewController id="nXG-nd-hRu" customClass="MenuToDetailViewController" customModule="Planetary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vMG-lZ-gSk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0VO-bl-Gb4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="FrF-1V-AI3">
+                                        <rect key="frame" x="22" y="366" width="370" height="189"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Планета — небесное тело, вращающееся по орбите вокруг звезды или её остатков, достаточно массивное, чтобы стать округлым под действием собственной гравитации, но недостаточно массивное для начала термоядерной реакции, и сумевшее очистить окрестности своей орбиты</string>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackhole" translatesAutoresizingMaskIntoConstraints="NO" id="CW8-jm-742">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="358"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="358" id="0Vl-Mi-Lcw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iE2-KN-1fP">
+                                        <rect key="frame" x="0.0" y="599" width="414" height="297"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="297" id="W82-IQ-pym"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="P2x-Ga-dVA">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P2x-Ga-dVA" id="6kT-8V-41a">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="FnJ-KZ-GGQ">
+                                                <rect key="frame" x="0.0" y="118" width="414" height="90"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FnJ-KZ-GGQ" id="qK5-I4-MdZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="EeD-VL-0KD">
+                                                <rect key="frame" x="0.0" y="208" width="414" height="90"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EeD-VL-0KD" id="UUp-la-dTZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Saz-pI-siv">
+                                        <rect key="frame" x="32" y="56" width="26" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="NVN-Ab-M3d"/>
+                                            <constraint firstAttribute="width" constant="26" id="QsD-Zl-rOC"/>
+                                        </constraints>
+                                        <state key="normal" image="Line 2"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="nXG-nd-hRu" eventType="touchUpInside" id="x1L-I4-LxE"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pe-KY-ovh">
+                                        <rect key="frame" x="79" y="52" width="256" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="PZA-dM-ubm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Saz-pI-siv" firstAttribute="leading" secondItem="0VO-bl-Gb4" secondAttribute="leading" constant="32" id="0M9-oG-lKW"/>
+                                    <constraint firstItem="FrF-1V-AI3" firstAttribute="leading" secondItem="0VO-bl-Gb4" secondAttribute="leading" constant="22" id="2Mb-zf-BZW"/>
+                                    <constraint firstItem="FrF-1V-AI3" firstAttribute="top" secondItem="CW8-jm-742" secondAttribute="bottom" constant="8" id="2xP-aS-JCb"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="1pe-KY-ovh" secondAttribute="trailing" constant="71" id="5qm-GE-qi7"/>
+                                    <constraint firstAttribute="trailing" secondItem="FrF-1V-AI3" secondAttribute="trailing" constant="22" id="5wY-ov-cfv"/>
+                                    <constraint firstItem="CW8-jm-742" firstAttribute="leading" secondItem="0VO-bl-Gb4" secondAttribute="leading" id="6ny-gg-ZiZ"/>
+                                    <constraint firstItem="iE2-KN-1fP" firstAttribute="leading" secondItem="0VO-bl-Gb4" secondAttribute="leading" id="CcN-ZK-tLW"/>
+                                    <constraint firstItem="CW8-jm-742" firstAttribute="top" secondItem="0VO-bl-Gb4" secondAttribute="top" id="Ink-0a-aww"/>
+                                    <constraint firstItem="FrF-1V-AI3" firstAttribute="centerX" secondItem="0VO-bl-Gb4" secondAttribute="centerX" id="J48-qe-GKe"/>
+                                    <constraint firstAttribute="bottom" secondItem="iE2-KN-1fP" secondAttribute="bottom" id="JoA-Eo-vJl"/>
+                                    <constraint firstItem="Saz-pI-siv" firstAttribute="top" secondItem="0VO-bl-Gb4" secondAttribute="top" constant="56" id="Ool-5w-Yve"/>
+                                    <constraint firstAttribute="trailing" secondItem="iE2-KN-1fP" secondAttribute="trailing" id="WMG-NT-Y5W"/>
+                                    <constraint firstItem="1pe-KY-ovh" firstAttribute="leading" secondItem="Saz-pI-siv" secondAttribute="trailing" constant="21" id="cEk-EO-BnE"/>
+                                    <constraint firstItem="1pe-KY-ovh" firstAttribute="top" secondItem="0VO-bl-Gb4" secondAttribute="topMargin" id="cw0-FA-3Ny"/>
+                                    <constraint firstAttribute="trailing" secondItem="CW8-jm-742" secondAttribute="trailing" id="haI-kt-xA8"/>
+                                    <constraint firstItem="iE2-KN-1fP" firstAttribute="top" secondItem="FrF-1V-AI3" secondAttribute="bottom" constant="44" id="po0-uY-yLG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0VO-bl-Gb4" firstAttribute="top" secondItem="vMG-lZ-gSk" secondAttribute="top" id="OK3-fm-68r"/>
+                            <constraint firstAttribute="bottom" secondItem="0VO-bl-Gb4" secondAttribute="bottom" id="VeQ-Nv-DvB"/>
+                            <constraint firstItem="0VO-bl-Gb4" firstAttribute="leading" secondItem="ZYt-ZM-kqY" secondAttribute="leading" id="de3-Kx-hiQ"/>
+                            <constraint firstItem="0VO-bl-Gb4" firstAttribute="trailing" secondItem="ZYt-ZM-kqY" secondAttribute="trailing" id="kCz-D7-LoX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZYt-ZM-kqY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="CW8-jm-742" id="hfg-8N-zZq"/>
+                        <outlet property="myView" destination="0VO-bl-Gb4" id="GWl-f0-cfP"/>
+                        <outlet property="tableView" destination="iE2-KN-1fP" id="nKP-nj-kK3"/>
+                        <outlet property="textView" destination="FrF-1V-AI3" id="Cz5-dq-f6g"/>
+                        <outlet property="titleLabel" destination="1pe-KY-ovh" id="zap-ye-s23"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LsD-eg-c5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1755.072463768116" y="18.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="E8f-N0-CpO">
@@ -134,7 +255,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Line 2" width="26" height="15"/>
         <image name="Menu button" width="26" height="26"/>
+        <image name="blackhole" width="1098" height="1034"/>
         <image name="mars" width="1200" height="1200"/>
     </resources>
 </document>

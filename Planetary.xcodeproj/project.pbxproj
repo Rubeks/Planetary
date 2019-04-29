@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B92AB98C22743876001608AF /* MenuToDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92AB98B22743876001608AF /* MenuToDetailViewController.swift */; };
+		B92AB98E22744746001608AF /* MenuToDetailPList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B92AB98D22744746001608AF /* MenuToDetailPList.plist */; };
+		B92E4C3F2276D029000BB5B6 /* MenuDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E4C3E2276D029000BB5B6 /* MenuDetailTableViewCell.swift */; };
+		B92E4C412276D34B000BB5B6 /* MenuToDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E4C402276D34B000BB5B6 /* MenuToDetailModel.swift */; };
+		B92E4C432276D38A000BB5B6 /* MenuToDetailModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E4C422276D38A000BB5B6 /* MenuToDetailModelView.swift */; };
 		B9436D5A22731236000CC80E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9436D5922731236000CC80E /* AppDelegate.swift */; };
 		B9436D5C22731236000CC80E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9436D5B22731236000CC80E /* ViewController.swift */; };
 		B9436D5F22731236000CC80E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9436D5D22731236000CC80E /* Main.storyboard */; };
@@ -22,6 +26,10 @@
 
 /* Begin PBXFileReference section */
 		B92AB98B22743876001608AF /* MenuToDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuToDetailViewController.swift; sourceTree = "<group>"; };
+		B92AB98D22744746001608AF /* MenuToDetailPList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MenuToDetailPList.plist; path = Planetary/SupportingFiles/MenuToDetailPList.plist; sourceTree = SOURCE_ROOT; };
+		B92E4C3E2276D029000BB5B6 /* MenuDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B92E4C402276D34B000BB5B6 /* MenuToDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuToDetailModel.swift; sourceTree = "<group>"; };
+		B92E4C422276D38A000BB5B6 /* MenuToDetailModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuToDetailModelView.swift; sourceTree = "<group>"; };
 		B9436D5622731236000CC80E /* Planetary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planetary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9436D5922731236000CC80E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9436D5B22731236000CC80E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +90,7 @@
 			children = (
 				B9436D5922731236000CC80E /* AppDelegate.swift */,
 				B9436D7222731C6F000CC80E /* MenuCollectionViewCell.swift */,
+				B92E4C3E2276D029000BB5B6 /* MenuDetailTableViewCell.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -116,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				B9436D6322731239000CC80E /* Assets.xcassets */,
+				B92AB98D22744746001608AF /* MenuToDetailPList.plist */,
 				B9436D6822731239000CC80E /* Info.plist */,
 				B9436D6022731236000CC80E /* Planetary.xcdatamodeld */,
 			);
@@ -126,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B9C189202273314100BC48EC /* MenuModel.swift */,
+				B92E4C402276D34B000BB5B6 /* MenuToDetailModel.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -135,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B9C18923227331AE00BC48EC /* MenuModelView.swift */,
+				B92E4C422276D38A000BB5B6 /* MenuToDetailModelView.swift */,
 			);
 			name = ModelView;
 			path = ..;
@@ -198,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B92AB98E22744746001608AF /* MenuToDetailPList.plist in Resources */,
 				B9436D6722731239000CC80E /* LaunchScreen.storyboard in Resources */,
 				B9436D6422731239000CC80E /* Assets.xcassets in Resources */,
 				B9436D5F22731236000CC80E /* Main.storyboard in Resources */,
@@ -215,7 +228,10 @@
 				B9436D5C22731236000CC80E /* ViewController.swift in Sources */,
 				B92AB98C22743876001608AF /* MenuToDetailViewController.swift in Sources */,
 				B9C189212273314100BC48EC /* MenuModel.swift in Sources */,
+				B92E4C432276D38A000BB5B6 /* MenuToDetailModelView.swift in Sources */,
 				B9436D6F227313A9000CC80E /* Extension CAGradientLayer.swift in Sources */,
+				B92E4C3F2276D029000BB5B6 /* MenuDetailTableViewCell.swift in Sources */,
+				B92E4C412276D34B000BB5B6 /* MenuToDetailModel.swift in Sources */,
 				B9C18924227331AE00BC48EC /* MenuModelView.swift in Sources */,
 				B9436D5A22731236000CC80E /* AppDelegate.swift in Sources */,
 				B9436D7322731C6F000CC80E /* MenuCollectionViewCell.swift in Sources */,
